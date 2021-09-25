@@ -1,0 +1,41 @@
+<div>
+    <a href="@Url">
+        <img src=@Picturesrc width="267" height="200" class="hexPic" />
+    </a>
+        <div class="container">
+
+        <h2>@Title</h2>
+        <p class="description">@Description</p>
+        <span class="bold">Tools used: </span><span class="bold green">@Toolsused</span>
+        <div class="d-flex justify-content-center align-items-center">
+            @if(Sourcecode != ""){
+            <a href="@Sourcecode">
+                <p type="button" class="btn btn-light m-3 mb-0">View Code</p>
+            </a>
+            }
+            else{
+            <p class="unavailable m-3 mb-0">Public code unavailable<br />for this item.</p>
+            }
+            <a href="@Url">
+                <p type="button" class="btn btn-light m-3 mb-0">View Page</p>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+@code{
+[Parameter]
+public string Picturesrc {get; set;}
+[Parameter]
+public string Title {get; set;}
+[Parameter]
+public string Description {get; set;}
+[Parameter]
+public string Url {get; set;}
+[Parameter]
+public string Sourcecode {get; set;}
+[Parameter]
+public string Toolsused {get; set;}
+}

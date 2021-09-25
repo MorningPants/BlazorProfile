@@ -1,0 +1,36 @@
+.hexPic{
+    filter: drop-shadow(3px 5px 2px gray);
+    position: relative;
+    z-index:1;
+}
+
+.container{
+    background: lightgray;
+    border-radius: 45px;
+    border: 2px solid darkgray;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -136px;
+    padding: 20px;
+    filter: drop-shadow(3px 5px 7px gray);
+}
+
+.description{
+    margin: auto;
+    width: 700px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.green{
+    color: seagreen;
+}
+
+.unavailable{
+    user-select: none;
+    background: #c0c0c0;
+    padding: 0px 12px;
+    border-radius: .25rem;
+}

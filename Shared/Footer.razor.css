@@ -1,0 +1,86 @@
+.footer{
+    width:100vw;
+    justify-content:center;
+}
+
+.fa, .icon {
+    width: 1.5rem;
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    position: relative;
+    color: black;
+}
+
+#github:hover #githublabel, #linkedin:hover #linkedinlabel, #catchafire:hover #catchafirelabel {
+    display: block;
+}
+
+.github, .linkedin {
+    text-decoration: none;
+    position: relative;
+}
+
+.label {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 0 3px;
+    animation-name: labelText;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.labelcontainer {
+    display: none;
+    bottom: 0px;
+    animation-name: labelUp;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+    height: 18px;
+    width: 70px;
+    position: absolute;
+    bottom: 47px;
+}
+
+.link {
+    text-decoration: none;
+    justify-content:end;
+    width:70px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+@keyframes labelUp {
+    from {
+        height: 0px;
+    }
+
+
+    to {
+        height: 18px;
+    }
+}
+
+@keyframes labelText {
+    from {
+        top: -14px;
+    }
+
+
+    to {
+        top: 0px;
+    }
+}
+
+
+

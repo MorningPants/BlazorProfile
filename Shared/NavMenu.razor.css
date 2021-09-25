@@ -1,0 +1,88 @@
+.topbar {
+    background: linear-gradient(to right, #333, #555, #444, #333);
+    padding-bottom: 9px;
+}
+
+.titlebar{
+    height:56px;
+    background: black;
+    color: seashell;
+    text-align:center;
+    font-size:39px;
+}
+
+.pageheader{
+    font-size:24px;
+}
+
+.label {
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.3;
+    height: 18px;
+    padding: 0 3px;
+    position: absolute;
+    bottom: -33px;
+    animation-name: labelDrop;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    color: seashell;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.link{
+    text-decoration:none;
+    position:relative;
+    cursor:pointer;
+}
+
+#about:hover #aboutlabel, #portfolio:hover #portfoliolabel, #contact:hover #contactlabel, #resume:hover #resumelabel {
+    display: block;
+}
+
+#about:hover #abouticon, #contact:hover #contacticon, #portfolio:hover #portfolioicon, #resume:hover #resumeicon {
+    color: lightsteelblue;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.oi {
+    width: 1.5rem;
+    font-size: 1.5rem;
+    margin: 15px 19px 5px 19px;
+    position: relative;
+    color: seashell;
+}
+
+
+@keyframes labelDrop {
+    from {
+        height: 0px;
+        bottom: -15px;
+    }
+
+
+    to {
+        height: 18px;
+        bottom: -33px;
+    }
+}
+
+
+
