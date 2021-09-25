@@ -46,3 +46,6 @@ jobs:
           build_dir: ${{ env.PUBLISH_DIR }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # changes the base-tag in index.html from '/' to 'BlazorProfile' to match GitHub Pages repository subdirectory
+      - name: Change base-tag in index.html from / to BlazorProfile
+        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorProfile\/" \/>/g' release/wwwroot/index.html
