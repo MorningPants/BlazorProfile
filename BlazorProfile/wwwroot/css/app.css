@@ -26,6 +26,11 @@
 }
 
 
+.MyButton{
+    border: 1px solid darkgray;
+    border-radius:30px;
+}
+
 
 @media screen and (max-width:1335px) {
     .leftText {
