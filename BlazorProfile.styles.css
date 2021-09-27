@@ -1,4 +1,4 @@
-/* /Shared/Components/PortfolioItem.razor.rz.scp.css */
+/* _content/BlazorProfile/Shared/Components/PortfolioItem.razor.rz.scp.css */
 .hexPic[b-o6zrqfu32t]{
     filter: drop-shadow(3px 5px 2px gray);
     position: relative;
@@ -35,7 +35,7 @@
     padding: 0px 12px;
     border-radius: .25rem;
 }
-/* /Shared/Footer.razor.rz.scp.css */
+/* _content/BlazorProfile/Shared/Footer.razor.rz.scp.css */
 .footer[b-xzm6jiccxo]{
     width:100vw;
     justify-content:center;
@@ -122,7 +122,7 @@
 
 
 
-/* /Shared/MainLayout.razor.rz.scp.css */
+/* _content/BlazorProfile/Shared/MainLayout.razor.rz.scp.css */
 .page[b-x2i68s2fiv] {
     position: relative;
     display: flex;
@@ -224,7 +224,7 @@ main[b-x2i68s2fiv] {
 }
 
 
-/* /Shared/NavMenu.razor.rz.scp.css */
+/* _content/BlazorProfile/Shared/NavMenu.razor.rz.scp.css */
 .topbar[b-m5pqwi7h05] {
     background: linear-gradient(to right, #333, #555, #444, #333);
     padding-bottom: 9px;
