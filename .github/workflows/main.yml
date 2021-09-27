@@ -24,10 +24,10 @@ jobs:
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish BlazorProfile/BlazorProfile.csproj -c Release -o release --nologo
-    
+
   # changes the base-tag in index.html from '/' to 'BlazorProfile' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to BlazorProfile
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorProfile\/" \/>/g' release/wwwroot/index.html
+  #  - name: Change base-tag in index.html from / to BlazorProfile
+  #    run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorProfile\/" \/>/g' release/wwwroot/index.html
     
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
