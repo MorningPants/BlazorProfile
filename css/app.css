@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     font-family: "Antic Slab", serif;
+    text-decoration:none;
+}
+
+.noUnderline{
+    text-decoration:none;
 }
 
 .center, h1{
@@ -25,16 +30,61 @@
     margin: 20px;
 }
 
-
-.MyButton{
-    border: 1px solid darkgray;
-    border-radius:30px;
+.mail:before {
+    background: #676767;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 6px;
 }
 
+.MyButton {
+    color: black;
+    border: 1px solid darkgray;
+    width: 153px;
+    border-radius: 14px 0 14px 14px;
+    background: linear-gradient(#a8a6a6, #646464);
+    text-align: center;
+    padding: 12px;
+    margin-left: auto;
+    position: relative;
+}
+
+.decoration1 {
+    background: #a7a5a5;
+    width: 47px;
+    height: 15px;
+    position: absolute;
+    top: -9px;
+    right: -1px;
+    border-radius: 8px;
+}
+
+.decoration2 {
+    width: 47px;
+    height: 9px;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    border-top: 10px solid #ec070700;
+    border-right: 18px solid #a7a5a5;
+}
+
+.MyButton > p {
+    margin-bottom: 0;
+}
+
+.buttonText{
+    text-decoration:none;
+    font-size:large;
+    color:white;
+}
 
 @media screen and (max-width:1335px) {
     .leftText {
         text-align: center;
+    }
+    .MyButton{
+        margin-right:auto;
     }
 }
 
@@ -158,3 +208,111 @@
         .blazor-error-boundary::after {
             content: "An error has occurred."
         }
+
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: lightgray;
+    overflow:hidden;
+}
+
+.loading1 {
+    background: lightgray;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    transform: rotate(342deg);
+    width: 0;
+    height: 300vh;
+    -webkit-animation: slide 10s linear infinite;
+    -moz-animation: slide 10s linear infinite;
+    animation: slide 10s linear infinite;
+}
+
+@-moz-keyframes slide {
+    0% {
+        left: 110%;
+        width: 700px
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        left: 110%;
+        width: 700px
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: 110%;
+        width: 700px
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+
+.loading2 {
+    background: gainsboro;
+    position: absolute;
+    top: -100vh;
+    left: -50%;
+    transform: rotate(342deg);
+    width: 0;
+    height: 300vh;
+    -webkit-animation: slide2 10s linear infinite;
+    -moz-animation: slide2 10s linear infinite;
+    animation: slide2 10s linear infinite;
+}
+
+@-moz-keyframes slide2 {
+    0% {
+        left: 200%;
+        width: 800px
+    }
+
+    100% {
+        left: -100%;
+        width: 0;
+    }
+}
+
+@-webkit-keyframes slide2 {
+    0% {
+        left: 200%;
+        width: 800px
+    }
+
+    100% {
+        left: -100%;
+        width: 0;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        left: 200%;
+        width: 800px
+    }
+
+    100% {
+        left: -100%;
+        width: 0;
+    }
+}
+
