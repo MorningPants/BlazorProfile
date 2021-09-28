@@ -1,7 +1,8 @@
-.hexPic{
+.hexPic {
     filter: drop-shadow(3px 5px 2px gray);
     position: relative;
-    z-index:1;
+    z-index: 1;
+    user-select: none;
 }
 
 .container{
@@ -33,4 +34,16 @@
     background: #c0c0c0;
     padding: 0px 12px;
     border-radius: .25rem;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .hexPic {
+        margin-left: calc(50% - 134px);
+    }
+
+    .container {
+        margin-top: -32px;
+        padding-top: 48px !important;
+    }
 }
