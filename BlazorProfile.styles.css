@@ -8,6 +8,7 @@
 
 .container[b-o6zrqfu32t]{
     background: lightgray;
+    width:90vw;
     border-radius: 45px;
     border: 2px solid darkgray;
     text-align: center;
@@ -19,7 +20,6 @@
 
 .description[b-o6zrqfu32t]{
     margin: auto;
-    width: 700px;
 }
 
 .bold[b-o6zrqfu32t]{
@@ -47,6 +47,15 @@
         margin-top: -32px;
         padding-top: 48px !important;
     }
+
+
+}
+
+@media only screen and (min-width: 1301px) {
+    .description[b-o6zrqfu32t] {
+        width: 700px;
+    }
+
 }
 /* /Shared/Footer.razor.rz.scp.css */
 .footer[b-xzm6jiccxo]{
