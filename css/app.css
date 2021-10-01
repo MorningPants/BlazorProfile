@@ -49,6 +49,10 @@
     position: relative;
 }
 
+.MyButton:hover {
+    background: linear-gradient(#b5b5b5, #868686);
+}
+
 .decoration1 {
     background: #a7a5a5;
     width: 47px;
