@@ -1,3 +1,45 @@
+/* /Pages/Index.razor.rz.scp.css */
+
+.leftText[b-u7q7awc9f5] {
+    width: 600px;
+    text-align: end;
+    margin: 20px;
+}
+
+.latest[b-u7q7awc9f5]{
+    width:600px;
+    text-align:center;
+}
+
+.hexPic[b-u7q7awc9f5] {
+    filter: drop-shadow(3px 5px 2px gray);
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+
+.container[b-u7q7awc9f5] {
+    background: lightgray;
+    border-radius: 45px;
+    border: 2px solid darkgray;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -20px;
+    padding: 20px;
+    filter: drop-shadow(3px 5px 7px gray);
+}
+
+.description[b-u7q7awc9f5]{
+    margin: auto;
+}
+
+.bold[b-u7q7awc9f5]{
+    font-weight: bold;
+}
+
+.green[b-u7q7awc9f5]{
+    color: seagreen;
+}
 /* /Shared/Components/PortfolioItem.razor.rz.scp.css */
 .hexPic[b-o6zrqfu32t] {
     filter: drop-shadow(3px 5px 2px gray);
